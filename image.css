@@ -1,0 +1,108 @@
+
+.container .head
+{
+    width: 1200px;
+    height: 700px;
+    background-image: url('../imag/makeup.jpg');
+    background-size: cover;
+    padding-top:7%;
+}
+.container .head .heading
+{
+    width: 25%;
+    margin: auto;
+    text-align: center;
+}
+.container .head .heading h1
+{
+    font-size: 60px;
+    margin-bottom: 20px;
+    border-bottom: 5px solid #eba94f;
+}
+.container .head .heading h1 span
+{
+    color: #eba94f;
+}
+.container .head .heading h3
+{
+    color:white;
+}
+
+ /* .image-container {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .image-backward {
+    transition: transform 0.3s ease;
+  }
+  
+  .image-backward:active {
+    transform: translateY(-10px);
+  }
+  
+  .image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+        background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .image-container:hover .image-overlay {
+    display: flex;
+  }*/
+   /* CSS styles for image flip and overlay */
+
+   .image-container {
+    position: relative;
+    display: inline-block;
+  }
+
+  .image-container .image-backward {
+    transform: scaleX(-1);
+  }
+
+  .image-container .image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .image-container:hover .image-overlay {
+    opacity: 1;
+  }
+
+  /* CSS styles for back-to-top button */
+
+  #backToTopButton {
+    position: fixed;
+    bottom: 20px;
+    right: 50%;
+    transform: translateX(-50%);
+    display: none;
+    opacity: 0;
+    transition: opacity 2ms ease;
+  }
+
+  #backToTopButton.show {
+    display: block;
+    opacity: 1;
+  }
+

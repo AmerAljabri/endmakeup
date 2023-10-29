@@ -1,0 +1,118 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.scrollable-content {
+  max-height: 100vh; /* Set the maximum height to the full viewport height */
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+
+/* Navigation */
+.navbar {
+  background-color: #333;
+}
+
+.navbar-brand {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+  color: #fff;
+  font-size: 16px;
+}
+
+/* Page Titles */
+h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+/* Product Listings */
+.card {
+  border: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+  height: auto;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.card-text {
+  color: #777;
+}
+
+.product-price {
+  color: green;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Contact Information */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+/* Footer */
+.footer {
+  background-color: #333;
+  color: #fff;
+}
+
+.footer span {
+  font-size: 14px;
+}
+
+/* Responsive Styles */
+
+/* Small devices (up to 576px) */
+@media (max-width: 576px) {
+  .container {
+    padding: 10px;
+  }
+}
+
+/* Medium devices (576px - 768px) */
+@media (min-width: 576px) and (max-width: 768px) {
+  .container {
+    max-width: 720px;
+    padding: 15px;
+  }
+}
+
+/* Large devices (768px - 992px) */
+@media (min-width: 768px) and (max-width: 992px) {
+  .container {
+    max-width: 960px;
+    padding: 20px;
+  }
+}
+
+/* Extra-large devices (992px and above) */
+@media (min-width: 992px) {
+  .container {
+    max-width: 1140px;
+    padding: 25px;
+  }
+}

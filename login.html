@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+     <link rel="stylesheet" href="login.css">
+    <script>
+        function validateLogin() {
+            // Get the values entered in the username and password fields
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            // Check if the username and password meet your criteria
+            // For example, you can check if the fields are empty or have specific values
+            if (username === "mohammed" && password === "12345") {
+                // If the username and password are correct, open the desired file
+                window.open("index.html", "_self");
+            } else {
+                // If the username and password are incorrect, display an error message
+                alert("كلمة السر أو الاسم غير صحيح، يرجى المحاولة مرة أخرى.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h2>تسجيل الدخول</h2>
+        <form>
+            <div class="form-group">
+                <label for="username">:الاسم</label>
+                <input type="text" id="username" name="username" placeholder="ادخل الاسم" required>
+            </div>
+            <div class="form-group">
+                <label for="password">:كلمة المرور</label>
+                <input type="password" id="password" name="password" placeholder="ادخل كلمة السر" required>
+            </div>
+            <div class="form-group">
+                <button type="button" onclick="validateLogin()">دخول</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
